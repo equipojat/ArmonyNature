@@ -1,0 +1,586 @@
+import { Product } from '../types';
+
+export const products: Product[] = [
+  // --- ORQUÍDEAS ---
+  {
+    id: 'orquidea-phalaenopsis',
+    name: 'Orquídea Phalaenopsis',
+    category: 'Orquídeas',
+    price: 85000,
+    images: [
+      'https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?q=80&w=600&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?q=80&w=600&auto=format&fit=crop'
+    ],
+    shortDescription: 'Elegancia natural y serenidad para tus espacios.',
+    description: 'La Orquídea Phalaenopsis, conocida como orquídea mariposa, es una de las plantas de interior más elegantes. Sus flores exóticas y duraderas añaden un toque de distinción y calma a cualquier ambiente.',
+    stock: 12,
+    difficulty: 'Intermedio',
+    light: 'Luz indirecta brillante, evitar sol directo.',
+    watering: 'Regar cuando las raíces internas se tornen grises (aprox. cada 8-10 días).',
+    humidity: 'Media-alta (50-70%). Evitar ambientes muy secos.',
+    temperature: '18°C - 28°C. Sensible a corrientes de aire frío.',
+    careInstructions: {
+      luz: 'Colocar cerca de una ventana con luz tamizada por una cortina.',
+      agua: 'Sumergir la maceta en agua templada durante 10 minutos y escurrir bien.',
+      sustrato: 'Corteza de pino y musgo sphagnum, especial para epífitas.',
+      humedad: 'Pulverizar agua alrededor de la planta, sin mojar las flores.',
+      temperatura: 'Mantener en un rango cálido y estable.',
+      fertilizacion: 'Fertilizante específico para orquídeas diluido, una vez al mes.'
+    },
+    healing: 'Su contemplación promueve la relajación mental y reduce los niveles de cortisol, aportando armonía visual.',
+    energy: 'En el Feng Shui se asocia con la pureza, la fertilidad y la atracción de relaciones afectivas sinceras.',
+    companionship: 'Su delicada floración enseña paciencia y nos recuerda la belleza de los procesos cíclicos de la vida.',
+    spirituality: 'Simboliza la búsqueda de la perfección espiritual y el refinamiento del alma en las tradiciones orientales.',
+    featured: true,
+    tag: 'Especial',
+    rating: 4.8,
+    reviewsCount: 24,
+    isPetSafe: true
+  },
+  {
+    id: 'orquidea-blanca',
+    name: 'Orquídea Blanca',
+    category: 'Orquídeas',
+    price: 90000,
+    images: [
+      'https://images.unsplash.com/photo-1596436889106-be35e843f974?q=80&w=600&auto=format&fit=crop'
+    ],
+    shortDescription: 'Pureza absoluta y paz interior.',
+    description: 'Nuestra Orquídea Blanca representa el refinamiento y la paz. Sus flores inmaculadas actúan como un punto focal de tranquilidad en el hogar, promoviendo una atmósfera de orden y claridad.',
+    stock: 8,
+    difficulty: 'Intermedio',
+    light: 'Luz indirecta abundante.',
+    watering: 'Moderado. Regar por inmersión cuando el sustrato esté seco.',
+    humidity: 'Alta. Se beneficia de un plato con piedras y agua debajo.',
+    temperature: '15°C - 25°C.',
+    careInstructions: {
+      luz: 'Mucha luz indirecta. La falta de luz impedirá la floración.',
+      agua: 'Evitar el encharcamiento en la corona de las hojas.',
+      sustrato: 'Sustrato aireado a base de corteza.',
+      humedad: 'Evitar la sequedad de la calefacción o aire acondicionado.',
+      temperatura: 'Evitar cambios bruscos de temperatura.',
+      fertilizacion: 'Aplicar abono foliar de orquídeas después del riego en época de crecimiento.'
+    },
+    healing: 'Su color blanco transmite una sensación de frescura, amplitud y limpieza mental ideal para espacios de trabajo.',
+    energy: 'Representa la energía del elemento Metal, asociada a la claridad de pensamiento, enfoque y simplicidad.',
+    companionship: 'Ofrece una presencia elegante que invita al silencio reflexivo y la meditación diaria.',
+    spirituality: 'Tradicionalmente ligada a la devoción, la verdad espiritual y la elevación de la conciencia.',
+    featured: false,
+    tag: 'Más vendido',
+    rating: 4.9,
+    reviewsCount: 16,
+    isPetSafe: true
+  },
+  {
+    id: 'orquidea-rosa',
+    name: 'Orquídea Rosa',
+    category: 'Orquídeas',
+    price: 88000,
+    images: [
+      'https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?q=80&w=600&auto=format&fit=crop'
+    ],
+    shortDescription: 'Amor incondicional y calidez emocional.',
+    description: 'La Orquídea Rosa deslumbra con sus tonos suaves y románticos. Ideal para regalar o para añadir un aura de afecto, bondad y ternura a los espacios personales o familiares.',
+    stock: 6,
+    difficulty: 'Intermedio',
+    light: 'Luz indirecta filtrada.',
+    watering: 'Regar cuando las raíces internas pierdan su tono verde brillante.',
+    humidity: 'Media (50-60%).',
+    temperature: '16°C - 26°C.',
+    careInstructions: {
+      luz: 'Evitar el sol directo que quema sus hojas.',
+      agua: 'Riego matutino para permitir que las raíces se sequen durante el día.',
+      sustrato: 'Corteza y fibra de coco.',
+      humedad: 'Pulverizar levemente si el ambiente es muy seco.',
+      temperatura: 'Proteger del frío extremo.',
+      fertilizacion: 'Fertilizar quincenalmente en primavera y verano con dosis bajas.'
+    },
+    healing: 'Sus tonalidades rosadas activan estados de ánimo positivos ligados al cariño, reduciendo la hostilidad ambiental.',
+    energy: 'Armoniza la energía del corazón (Anahata chakra), promoviendo la empatía y la resolución pacífica de conflictos.',
+    companionship: 'Una compañera dulce que alegra los rincones con su belleza y evoca sentimientos de gratitud.',
+    spirituality: 'Se asocia con la gracia divina y el amor compasivo expresado en las tradiciones espirituales.',
+    featured: false,
+    rating: 4.7,
+    reviewsCount: 11,
+    isPetSafe: true
+  },
+
+  // --- ANTURIOS ---
+  {
+    id: 'anturio-rojo',
+    name: 'Anturio Rojo',
+    category: 'Anturios',
+    price: 55000,
+    images: [
+      'https://images.unsplash.com/photo-1598880940080-ff9a29891b85?q=80&w=600&auto=format&fit=crop'
+    ],
+    shortDescription: 'Pasión por la vida y vitalidad.',
+    description: 'El Anturio Rojo es famoso por sus inflorescencias brillantes en forma de corazón. Es una planta resistente que purifica el aire y aporta una inyección de energía y color constante gracias a su prolongada floración.',
+    stock: 15,
+    difficulty: 'Fácil',
+    light: 'Luz indirecta moderada a brillante.',
+    watering: 'Mantener el sustrato ligeramente húmedo, pero sin encharcar (aprox. 1-2 veces por semana).',
+    humidity: 'Alta (60-80%). Hojas agradecen pulverización diaria.',
+    temperature: '18°C - 25°C. No tolera temperaturas por debajo de los 15°C.',
+    careInstructions: {
+      luz: 'Tolera niveles medios de luz, pero florece más con buena iluminación indirecta.',
+      agua: 'Dejar secar la capa superior del sustrato antes de volver a regar.',
+      sustrato: 'Mezcla aireada con turba, perlita y corteza.',
+      humedad: 'Limpiar sus hojas con un paño húmedo periódicamente.',
+      temperatura: 'Mantener alejada de radiadores y aires acondicionados.',
+      fertilizacion: 'Fertilizante de plantas de flor en primavera cada 20 días.'
+    },
+    healing: 'Ayuda a filtrar toxinas del aire interior como el amoníaco y el xileno, mejorando la calidad respiratoria.',
+    energy: 'Representa la hospitalidad y la pasión. Sus flores rojas estimulan el entusiasmo, la motivación y la fuerza vital.',
+    companionship: 'Su vigor y facilidad de cuidado la convierten en una presencia estimulante en estudios o salas de estar.',
+    spirituality: 'En algunas tradiciones tropicales, sus hojas en forma de corazón se consideran símbolos de bienvenida sincera y generosidad.',
+    featured: true,
+    tag: 'Más vendido',
+    rating: 4.6,
+    reviewsCount: 32,
+    isPetSafe: false
+  },
+  {
+    id: 'anturio-blanco',
+    name: 'Anturio Blanco',
+    category: 'Anturios',
+    price: 58000,
+    images: [
+      'https://images.unsplash.com/photo-1614594975525-e45190c55d0b?q=80&w=600&auto=format&fit=crop'
+    ],
+    shortDescription: 'Armonía minimalista y tranquilidad.',
+    description: 'El Anturio Blanco ofrece una estética limpia y sofisticada. Sus espatas blancas contrastan maravillosamente con el verde oscuro de su follaje, ideal para crear un ambiente nórdico o Zen de absoluta relajación.',
+    stock: 9,
+    difficulty: 'Fácil',
+    light: 'Luz indirecta media.',
+    watering: 'Riego moderado. Reducir en invierno.',
+    humidity: 'Alta. Pulverizar follaje regularmente.',
+    temperature: '16°C - 24°C.',
+    careInstructions: {
+      luz: 'Evitar el sol directo que mancha sus espatas blancas.',
+      agua: 'Utilizar agua reposada o de lluvia si es posible.',
+      sustrato: 'Sustrato fértil y muy bien drenado.',
+      humedad: 'Mantener humedad ambiental alta sin encharcar el suelo.',
+      temperatura: 'Evitar corrientes de aire frío de puertas o ventanas.',
+      fertilizacion: 'Abonar una vez al mes durante el periodo de crecimiento.'
+    },
+    healing: 'Purifica compuestos orgánicos volátiles en el aire, propiciando un ambiente de descanso saludable.',
+    energy: 'Transmite calma y neutraliza tensiones en el hogar. Promueve un flujo de energía equilibrado y apacible.',
+    companionship: 'Ideal para espacios de meditación o dormitorios, brindando estabilidad emocional con su presencia constante.',
+    spirituality: 'Simboliza la honestidad, la transparencia mental y la pureza de intenciones en el sendero personal.',
+    featured: false,
+    rating: 4.7,
+    reviewsCount: 19,
+    isPetSafe: false
+  },
+  {
+    id: 'anturio-rosa',
+    name: 'Anturio Rosa',
+    category: 'Anturios',
+    price: 60000,
+    images: [
+      'https://images.unsplash.com/photo-1545241047-6083a3684587?q=80&w=600&auto=format&fit=crop'
+    ],
+    shortDescription: 'Amabilidad, dulzura y empatía.',
+    description: 'Con sus elegantes hojas y flores de un rosa pastel muy sutil, este anturio irradia una energía reconfortante. Es la opción perfecta para ablandar estéticas sobrias y añadir calidez.',
+    stock: 7,
+    difficulty: 'Fácil',
+    light: 'Luz indirecta moderada.',
+    watering: '1-2 veces por semana según la época del año.',
+    humidity: 'Alta.',
+    temperature: '18°C - 26°C.',
+    careInstructions: {
+      luz: 'Luz indirecta, tolera semisombra.',
+      agua: 'Evitar que la maceta quede sumergida en agua residual.',
+      sustrato: 'Sustrato ligero y con perlita.',
+      humedad: 'Pulverizar hojas, evitando mojar las flores directamente.',
+      temperatura: 'Mantener en ambientes interiores cálidos.',
+      fertilizacion: 'Abonar cada mes con fertilizante líquido diluido.'
+    },
+    healing: 'La presencia de plantas de flores suaves ayuda a aliviar el estrés visual acumulado frente a pantallas digitales.',
+    energy: 'Promueve la empatía, el perdón y la auto-compasión. Ideal para suavizar la atmósfera de espacios compartidos.',
+    companionship: 'Es una compañera noble y de bajo mantenimiento que alegra el día a día con sus flores duraderas.',
+    spirituality: 'Representa el florecimiento de la compasión interna y el equilibrio emocional.',
+    featured: false,
+    tag: 'Nuevo',
+    rating: 4.5,
+    reviewsCount: 9,
+    isPetSafe: false
+  },
+
+  // --- SUCULENTAS ---
+  {
+    id: 'suculenta-echeveria',
+    name: 'Echeveria Elegans',
+    category: 'Suculentas',
+    price: 22000,
+    images: [
+      'https://images.unsplash.com/photo-1520302630591-fd1c66edc19d?q=80&w=600&auto=format&fit=crop'
+    ],
+    shortDescription: 'Geometría sagrada en miniatura.',
+    description: 'La Echeveria Elegans, o rosa de alabastro, destaca por su simetría perfecta en forma de roseta y sus tonos verde azulados. Es una planta compacta que almacena agua en sus hojas, ideal para ventanas soleadas.',
+    stock: 25,
+    difficulty: 'Fácil',
+    light: 'Luz directa o indirecta muy brillante.',
+    watering: 'Muy bajo. Regar solo cuando el sustrato esté completamente seco (aprox. cada 15-20 días).',
+    humidity: 'Baja. No tolera la humedad constante.',
+    temperature: '10°C - 30°C. Proteger de heladas intensas.',
+    careInstructions: {
+      luz: 'Requiere al menos 4-6 horas de luz solar directa para mantener su forma compacta.',
+      agua: 'Utilizar el método de "remoto y seco": regar abundantemente y esperar que se seque del todo.',
+      sustrato: 'Sustrato específico para cactus y suculentas, muy poroso (mezcla con arena y piedra pómez).',
+      humedad: 'No pulverizar agua sobre sus hojas, puede pudrir la roseta.',
+      temperatura: 'Soporta el calor veraniego, mantener seca en invierno.',
+      fertilizacion: 'Fertilizante específico para suculentas muy diluido en primavera.'
+    },
+    healing: 'Sus patrones concéntricos perfectos inducen un estado natural de enfoque y mindfulness al contemplarlos.',
+    energy: 'Se asocia con la resiliencia y la autosuficiencia energética, acumulando fuerza interna sin depender del exterior.',
+    companionship: 'Una presencia discreta pero geométrica que inspira orden y minimalismo en escritorios pequeños.',
+    spirituality: 'Simboliza la geometría sagrada del universo y la belleza que surge bajo condiciones de austeridad.',
+    featured: true,
+    tag: 'Más vendido',
+    rating: 4.9,
+    reviewsCount: 45,
+    isPetSafe: true
+  },
+  {
+    id: 'suculenta-haworthia',
+    name: 'Haworthia Fasciata',
+    category: 'Suculentas',
+    price: 25000,
+    images: [
+      'https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=600&auto=format&fit=crop'
+    ],
+    shortDescription: 'Resiliencia y protección sutil.',
+    description: 'Conocida como planta cebra por sus rayas blancas horizontales, la Haworthia Fasciata es una suculenta sumamente resistente que tolera mejor la sombra que otras suculentas, siendo perfecta para interiores.',
+    stock: 20,
+    difficulty: 'Fácil',
+    light: 'Luz indirecta brillante a semisombra.',
+    watering: 'Escaso. Regar una vez al mes en invierno, quincenal en verano.',
+    humidity: 'Baja.',
+    temperature: '15°C - 28°C.',
+    careInstructions: {
+      luz: 'Perfecta para interiores cerca de ventanas sin sol directo del mediodía.',
+      agua: 'Evitar acumular agua en el centro de las hojas.',
+      sustrato: 'Sustrato arenoso muy bien drenado.',
+      humedad: 'Mantener en ambientes secos e interiores.',
+      temperatura: 'Mantener resguardada de corrientes de aire helado.',
+      fertilizacion: 'No requiere fertilización constante, solo una dosis anual.'
+    },
+    healing: 'Ayuda a limpiar la mente gracias a su estructura erguida y contrastante que capta la atención de forma sutil.',
+    energy: 'Su apariencia rayada y puntiaguda se interpreta como un escudo protector frente a influencias estresantes externas.',
+    companionship: 'Es una compañera ideal para oficinas cerradas gracias a su gran tolerancia a condiciones no óptimas.',
+    spirituality: 'Encarna la adaptabilidad y el crecimiento silencioso pero firme ante los desafíos cotidianos.',
+    featured: false,
+    rating: 4.8,
+    reviewsCount: 22,
+    isPetSafe: true
+  },
+  {
+    id: 'suculenta-crassula',
+    name: 'Crassula Ovata (Árbol de Jade)',
+    category: 'Suculentas',
+    price: 32000,
+    images: [
+      'https://images.unsplash.com/photo-1512428559087-560fa5ceab42?q=80&w=600&auto=format&fit=crop'
+    ],
+    shortDescription: 'Prosperidad, fortuna y abundancia.',
+    description: 'El Árbol de Jade es una suculenta arbustiva con hojas carnosas de color verde brillante que recuerdan a las monedas de jade. Considerado un amuleto clásico de la buena fortuna y la salud financiera.',
+    stock: 18,
+    difficulty: 'Fácil',
+    light: 'Luz solar directa o indirecta brillante.',
+    watering: 'Moderado. Dejar secar el sustrato por completo entre riegos.',
+    humidity: 'Baja.',
+    temperature: '15°C - 30°C.',
+    careInstructions: {
+      luz: 'Prefiere luz abundante para crecer compacta y fuerte. Las puntas de las hojas pueden tornarse rojizas con el sol.',
+      agua: 'Regar a fondo y drenar bien. Sensible al exceso de riego.',
+      sustrato: 'Tierra para macetas mezclada con perlita y arena gruesa.',
+      humedad: 'No requiere humedad ambiental. Evitar colocarla en el baño.',
+      temperatura: 'Resistente a temperaturas cálidas y templadas.',
+      fertilizacion: 'Abonar suavemente en primavera.'
+    },
+    healing: 'Su color verde vibrante y sus hojas redondas tienen un efecto calmante que reduce el estrés mental en zonas de trabajo.',
+    energy: 'Tradición milenaria del Feng Shui para activar la riqueza. Se cree que su crecimiento saludable refleja prosperidad creciente.',
+    companionship: 'Puede vivir décadas si se cuida bien, convirtiéndose en un testigo vivo del crecimiento familiar o profesional.',
+    spirituality: 'Simboliza la renovación constante, la longevidad y el desarrollo de la abundancia espiritual.',
+    featured: true,
+    tag: 'Especial',
+    rating: 4.9,
+    reviewsCount: 38,
+    isPetSafe: false
+  },
+  {
+    id: 'suculenta-aloe',
+    name: 'Aloe Vera',
+    category: 'Suculentas',
+    price: 28000,
+    images: [
+      'https://images.unsplash.com/photo-1596547609652-9cf5d8d76921?q=80&w=600&auto=format&fit=crop'
+    ],
+    shortDescription: 'Sanación ancestral y purificación.',
+    description: 'El Aloe Vera es mundialmente reconocido por sus propiedades calmantes y curativas. Sus largas hojas espinosas contienen un gel rico en nutrientes y es un potente purificador del aire.',
+    stock: 22,
+    difficulty: 'Fácil',
+    light: 'Luz brillante con algo de sol directo.',
+    watering: 'Bajo. Regar cuando la tierra esté seca en su totalidad.',
+    humidity: 'Baja.',
+    temperature: '13°C - 28°C.',
+    careInstructions: {
+      luz: 'Luz directa o indirecta brillante. Cuidado con el sol del mediodía en verano.',
+      agua: 'Regar con moderación. El exceso pudre las raíces.',
+      sustrato: 'Mezcla bien drenada, arenosa.',
+      humedad: 'Resistente a la sequedad.',
+      temperatura: 'Proteger de heladas invernales.',
+      fertilizacion: 'Fertilizar una vez al inicio de la primavera.'
+    },
+    healing: 'Su gel hidrata y calma quemaduras leves de la piel. Purifica toxinas ambientales mejorando la calidad del aire del dormitorio.',
+    energy: 'Se cree tradicionalmente que ahuyenta las malas vibras y absorbe las ondas electromagnéticas de electrodomésticos.',
+    companionship: 'Una planta humilde y generosa que requiere poco y ofrece propiedades protectoras para el hogar.',
+    spirituality: 'Históricamente asociada con la inmortalidad y la regeneración espiritual debido a su resiliencia extrema.',
+    featured: false,
+    rating: 4.7,
+    reviewsCount: 29,
+    isPetSafe: false
+  },
+
+  // --- BONSÁIS ---
+  {
+    id: 'bonsai-ficus',
+    name: 'Bonsái Ficus Retusa',
+    category: 'Bonsáis',
+    price: 140000,
+    images: [
+      'https://images.unsplash.com/photo-1613143714545-ef291122cf2c?q=80&w=600&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1512428813824-f72533035545?q=80&w=600&auto=format&fit=crop'
+    ],
+    shortDescription: 'Fuerza interior, disciplina y constancia.',
+    description: 'El Bonsái Ficus Retusa es el árbol de inicio ideal. Es sumamente resistente, tolera ambientes interiores y posee hermosas raíces aéreas expuestas que le otorgan un aspecto antiguo y majestuoso.',
+    stock: 5,
+    difficulty: 'Fácil',
+    light: 'Luz brillante indirecta. Acepta algo de sol directo de la mañana.',
+    watering: 'Moderado. Regar a fondo cuando la superficie del sustrato comience a secarse.',
+    humidity: 'Media-alta. Agradece pulverizaciones en climas secos.',
+    temperature: '15°C - 30°C. Proteger del frío invernal extremo.',
+    careInstructions: {
+      luz: 'Ubicar cerca de una ventana amplia orientada al sur o al este.',
+      agua: 'Regar abundantemente hasta que el agua salga por los agujeros de drenaje. No dejar encharcar.',
+      sustrato: 'Akadama mezclada con pomice y turba para retener algo de humedad.',
+      humedad: 'Colocar sobre una bandeja con gravilla y agua para elevar la humedad ambiental de forma natural.',
+      temperatura: 'Mantener resguardado en interiores durante heladas.',
+      fertilizacion: 'Abonar quincenalmente en primavera y mensualmente en otoño con abono orgánico para bonsáis.'
+    },
+    healing: 'Su modelado y cuidado diario reducen la ansiedad, fomentando la atención plena y estimulando la creatividad.',
+    energy: 'Representa la adaptabilidad y el vigor del elemento Madera, que estimula el crecimiento personal y la renovación de proyectos.',
+    companionship: 'Se convierte en un compañero de vida de larga duración, reflejando el cuidado mutuo y el paso del tiempo.',
+    spirituality: 'La práctica del bonsái es una meditación activa Zen sobre la interconexión entre el ser humano y la naturaleza.',
+    featured: true,
+    tag: 'Especial',
+    rating: 4.8,
+    reviewsCount: 15,
+    isPetSafe: false
+  },
+  {
+    id: 'bonsai-carmona',
+    name: 'Bonsái Carmona (Té de Fukien)',
+    category: 'Bonsáis',
+    price: 155000,
+    images: [
+      'https://images.unsplash.com/photo-1512428813824-f72533035545?q=80&w=600&auto=format&fit=crop'
+    ],
+    shortDescription: 'Armonía zen y florecimiento interior.',
+    description: 'El Té de Fukien es un bonsái de interior clásico, apreciado por sus hojas de color verde oscuro brillante con pequeños puntos blancos y sus delicadas florecillas blancas que brotan durante la primavera.',
+    stock: 4,
+    difficulty: 'Avanzado',
+    light: 'Luz indirecta brillante.',
+    watering: 'Riego constante. No tolerar que el sustrato se seque por completo.',
+    humidity: 'Alta. Muy sensible a la sequedad ambiental.',
+    temperature: '18°C - 24°C. Evitar corrientes y cambios de ubicación.',
+    careInstructions: {
+      luz: 'Necesita abundante luz pero tamizada, preferiblemente en una habitación cálida.',
+      agua: 'Regar apenas la superficie empiece a secarse. Mantener el sustrato húmedo de forma regular.',
+      sustrato: 'Sustrato rico pero que drene excelentemente para evitar pudrición de raíz.',
+      humedad: 'Requiere pulverización casi diaria o humedecedor ambiental.',
+      temperatura: 'Mantener en una temperatura estable todo el año.',
+      fertilizacion: 'Fertilizante líquido para bonsáis una vez al mes en primavera.'
+    },
+    healing: 'Sus pequeñas flores blancas evocan tranquilidad mental y frescura emocional en espacios estresados.',
+    energy: 'Representa el equilibrio y el refinamiento estético. Se cree que su floración sana es señal de armonía en el hogar.',
+    companionship: 'Requiere atención detallada, ideal para quienes buscan una relación estrecha y consciente de cuidado vegetal.',
+    spirituality: 'Simboliza la constancia en la práctica espiritual y la belleza que brota del esmero constante.',
+    featured: false,
+    tag: 'Nuevo',
+    rating: 4.5,
+    reviewsCount: 8,
+    isPetSafe: true
+  },
+  {
+    id: 'bonsai-junipero',
+    name: 'Bonsái Junípero',
+    category: 'Bonsáis',
+    price: 165000,
+    images: [
+      'https://images.unsplash.com/photo-1502082553048-f009c37129b9?q=80&w=600&auto=format&fit=crop'
+    ],
+    shortDescription: 'Longevidad, fuerza y conexión ancestral.',
+    description: 'El Bonsái Junípero es el icono clásico del bonsái de exterior. Sus agujas densas y su tronco retorcido evocan los paisajes de alta montaña. Es muy longevo y requiere pasar las estaciones al aire libre.',
+    stock: 3,
+    difficulty: 'Intermedio',
+    light: 'Sol directo en exteriores.',
+    watering: 'Moderado. Dejar secar ligeramente la superficie del suelo.',
+    humidity: 'Media. Prefiere el aire fresco exterior.',
+    temperature: '-5°C - 35°C (Exterior total).',
+    careInstructions: {
+      luz: 'Debe cultivarse en exteriores. Requiere sol directo para mantener sus agujas sanas.',
+      agua: 'Evitar encharcamientos prolongados. Regar al amanecer o al atardecer.',
+      sustrato: 'Sustrato altamente drenante como akadama pura o mezcla con pómice.',
+      humedad: 'Agradece el rocío natural nocturno en exteriores.',
+      temperatura: 'Resistente a heladas y calor siempre que esté aclimatado.',
+      fertilizacion: 'Abono orgánico de liberación lenta en primavera y otoño.'
+    },
+    healing: 'Su cultivo exterior nos reconecta con el ritmo natural de las estaciones y promueve la calma al aire libre.',
+    energy: 'Asociado con la longevidad, la tenacidad y la purificación espiritual. Su follaje perenne representa vitalidad inquebrantable.',
+    companionship: 'Ideal para balcones, jardines o terrazas. Una obra de arte viva que evoluciona con las estaciones.',
+    spirituality: 'En el sintoísmo japonés, los juníperos centenarios se consideran morada de espíritus de la naturaleza y guías sagrados.',
+    featured: false,
+    rating: 4.7,
+    reviewsCount: 12,
+    isPetSafe: true
+  },
+
+  // --- MATERAS ---
+  {
+    id: 'matera-ceramica',
+    name: 'Matera de Cerámica Esmaltada',
+    category: 'Materas',
+    price: 45000,
+    images: [
+      'https://images.unsplash.com/photo-1612196808214-b8e1d6145a8c?q=80&w=600&auto=format&fit=crop'
+    ],
+    shortDescription: 'Soporte elegante y brillo natural.',
+    description: 'Nuestra Matera de Cerámica Esmaltada está diseñada para realzar la belleza de cualquier planta. Su acabado brillante y colores tierra armonizan perfectamente con la decoración moderna y tradicional.',
+    stock: 30,
+    difficulty: 'Fácil',
+    light: 'No aplica.',
+    watering: 'No aplica.',
+    humidity: 'Resistente a la humedad.',
+    temperature: 'Soporta cualquier rango.',
+    careInstructions: {
+      luz: 'No aplica.',
+      agua: 'Lavar con agua jabonosa suave cuando sea necesario.',
+      sustrato: 'Dispone de orificio de drenaje para su uso correcto.',
+      humedad: 'No aplica.',
+      temperatura: 'No aplica.',
+      fertilizacion: 'No aplica.'
+    },
+    healing: 'La estética pulida y limpia de la cerámica contribuye a la calma visual y la organización estética del espacio.',
+    energy: 'Representa el elemento Tierra en la decoración, aportando estabilidad, seguridad y enraizamiento a la estancia.',
+    companionship: 'Un nido confiable y duradero que acoge y protege las raíces de tus compañeras vegetales.',
+    spirituality: 'La arcilla moldeada y cocida recuerda la capacidad humana de transformar la materia bruta en arte útil.',
+    featured: false,
+    rating: 4.6,
+    reviewsCount: 25,
+    isPetSafe: true
+  },
+  {
+    id: 'matera-artesanal',
+    name: 'Matera de Barro Artesanal',
+    category: 'Materas',
+    price: 35000,
+    images: [
+      'https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?q=80&w=600&auto=format&fit=crop'
+    ],
+    shortDescription: 'Porosidad natural y conexión rústica.',
+    description: 'Hecha a mano por artesanos locales, esta matera de barro natural permite una transpiración óptima de las raíces gracias a su porosidad. Ideal para plantas sensibles al exceso de agua como las suculentas.',
+    stock: 25,
+    difficulty: 'Fácil',
+    light: 'No aplica.',
+    watering: 'No aplica.',
+    humidity: 'Permite transpirar el agua.',
+    temperature: 'No aplica.',
+    careInstructions: {
+      luz: 'No aplica.',
+      agua: 'Al ser porosa, absorberá humedad del riego de la planta, tornando un tono oscuro natural.',
+      sustrato: 'No aplica.',
+      humedad: 'Ideal para suculentas y cactus por su rápida evaporación del exceso de agua.',
+      temperatura: 'No aplica.',
+      fertilizacion: 'No aplica.'
+    },
+    healing: 'Su textura táctil e imperfecta nos reconecta con la tierra y el trabajo manual, alejando el estrés tecnológico.',
+    energy: 'Aporta una vibración rústica y cálida que invita a la sencillez y al retorno a las raíces.',
+    companionship: 'Una pieza única con su propia historia que envejece con carácter y patina con los años.',
+    spirituality: 'El barro simboliza nuestro propio cuerpo y la fragilidad hermosa de la existencia física.',
+    featured: true,
+    tag: 'Especial',
+    rating: 4.8,
+    reviewsCount: 42,
+    isPetSafe: true
+  },
+  {
+    id: 'matera-minimalista',
+    name: 'Matera de Cemento Minimalista',
+    category: 'Materas',
+    price: 38000,
+    images: [
+      'https://images.unsplash.com/photo-1485955900006-10f4d324d411?q=80&w=600&auto=format&fit=crop'
+    ],
+    shortDescription: 'Líneas limpias y simplicidad moderna.',
+    description: 'Matera de cemento pulido en color gris neutro o blanco roto. Su diseño geométrico y minimalista realza la arquitectura natural de la planta, encajando en estéticas de corte nórdico, loft o contemporáneo.',
+    stock: 15,
+    difficulty: 'Fácil',
+    light: 'No aplica.',
+    watering: 'No aplica.',
+    humidity: 'Resistente.',
+    temperature: 'No aplica.',
+    careInstructions: {
+      luz: 'No aplica.',
+      agua: 'Limpiar el exterior con un paño ligeramente húmedo.',
+      sustrato: 'Dispone de almohadillas en la base para proteger los muebles de raspaduras.',
+      humedad: 'No aplica.',
+      temperatura: 'No aplica.',
+      fertilizacion: 'No aplica.'
+    },
+    healing: 'Su diseño limpio y libre de ornamentos ayuda a calmar la vista y a estructurar el orden mental.',
+    energy: 'Ayuda a asentar el exceso de dinamismo en el espacio, brindando un contrapeso de solidez y peso físico.',
+    companionship: 'Estructura protectora e inmutable que destaca el verde vivo de la planta.',
+    spirituality: 'Evoca la belleza de la austeridad y la quietud meditativa presente en el minimalismo japonés.',
+    featured: false,
+    tag: 'Nuevo',
+    rating: 4.5,
+    reviewsCount: 18,
+    isPetSafe: true
+  },
+  {
+    id: 'matera-espiritual',
+    name: 'Matera Mandala del Bienestar',
+    category: 'Materas',
+    price: 48000,
+    images: [
+      'https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=600&auto=format&fit=crop'
+    ],
+    shortDescription: 'Grabados concéntricos de meditación.',
+    description: 'Matera decorativa con grabados en relieve de patrones sagrados o mandalas en tonos crema y dorado. Es la pieza perfecta para tus altares, rincones de meditación o espacios de yoga.',
+    stock: 10,
+    difficulty: 'Fácil',
+    light: 'No aplica.',
+    watering: 'No aplica.',
+    humidity: 'Resistente.',
+    temperature: 'No aplica.',
+    careInstructions: {
+      luz: 'No aplica.',
+      agua: 'Evitar tallar fuertemente las zonas doradas para conservar el brillo.',
+      sustrato: 'No aplica.',
+      humedad: 'No aplica.',
+      temperatura: 'No aplica.',
+      fertilizacion: 'No aplica.'
+    },
+    healing: 'Los detalles grabados sirven como un punto de enfoque de meditación (Trataka) para calmar la dispersión mental.',
+    energy: 'Los patrones concéntricos irradian armonía y ayudan a equilibrar las vibraciones energéticas del entorno.',
+    companionship: 'Ideal para acoger orquídeas o plantas espirituales, creando un santuario personal de meditación.',
+    spirituality: 'El mandala representa la totalidad del universo, la unidad cósmica y el viaje hacia el centro de uno mismo.',
+    featured: true,
+    rating: 4.9,
+    reviewsCount: 31,
+    isPetSafe: true
+  }
+];

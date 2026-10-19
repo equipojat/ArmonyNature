@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#faf9f6] text-stone-800 selection:bg-forest/10 selection:text-forest;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif tracking-wide text-forest-dark;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-forest text-white font-medium rounded-full shadow-md hover:bg-forest-light hover:shadow-lg transition-all duration-300 transform active:scale-95 flex items-center justify-center gap-2;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 border border-forest text-forest font-medium rounded-full hover:bg-forest/5 transition-all duration-300 transform active:scale-95 flex items-center justify-center gap-2;
+  }
+
+  .btn-tertiary {
+    @apply px-6 py-3 bg-white text-forest font-medium rounded-full border border-stone-200 shadow-sm hover:border-forest/30 transition-all duration-300 transform active:scale-95 flex items-center justify-center gap-2;
+  }
+  
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-md border border-white/30 shadow-sm;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #faf9f6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8f9e8b;
+  border-radius: 9999px;
+  border: 2px solid #faf9f6;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1b4332;
+}
+
+/* Smooth transition animations */
+.transition-smooth {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
